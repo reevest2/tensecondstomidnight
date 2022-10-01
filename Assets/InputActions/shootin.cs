@@ -10,7 +10,6 @@ public class shootin : MonoBehaviour
 
     public float bulletForce = 20f;
 
-
     // Start is called before the first frame update
     void Start()
     {
