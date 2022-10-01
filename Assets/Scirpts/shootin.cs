@@ -9,8 +9,7 @@ public class shootin : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public GameObject spawnObj;
-    //public Transform spawnLocations;
+    public int numberOfShots = 1;
 
     public float bulletForce = 20f;
 
@@ -18,24 +17,16 @@ public class shootin : MonoBehaviour
     void Start()
     {
         InvokeRepeating("FireProjectile", 10f, 10f);
-        Invoke("FirePoint", .5f);
     }
 
     // Update is called once per frame
     void FireProjectile()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < numberOfShots; i++)
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         }
-    }
-
-    public void FirePoint()
-    {
-        GameObject point = Instantiate(spawnObj, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = point.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 }

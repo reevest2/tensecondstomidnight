@@ -5,11 +5,11 @@ using UnityEngine;
 public class point : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public shootin a;
+    public shootpoints a;
 
     void Start()
     {
-        a=GameObject.FindGameObjectWithTag("Gun").GetComponent<shootin>();
+        a=GameObject.FindGameObjectWithTag("Gun").GetComponent<shootpoints>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -19,8 +19,8 @@ public class point : MonoBehaviour
             if (col.gameObject.tag.Equals("Player"))
             {
                 Destroy(gameObject);
-
-                a.FirePoint();
+                Score.scoreAmount +=1;
+                a.FirePointNoForce();
             }
         }
     }

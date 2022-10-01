@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8028224914622066611}
   - component: {fileID: 8028224914622066610}
-  - component: {fileID: 8028224914622066609}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Player
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,19 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8028224914622066609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8028224914622066620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3606005a2100546b95951f911fb0c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 8028224914622066611}
-  bulletPrefab: {fileID: 774895223603317029, guid: eac35c975f87560458100dac49576fad, type: 3}
-  spawnObj: {fileID: 774895223603317029, guid: 18a39d85d6f447d4b9a2290ce2ff46dc, type: 3}
-  bulletForce: 20
