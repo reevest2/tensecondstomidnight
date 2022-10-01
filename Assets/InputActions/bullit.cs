@@ -6,12 +6,27 @@ public class bullit : MonoBehaviour
 {
     public Rigidbody2D rb;
 
-    void OnCollisionEnter2D (Collision2D col)
+    public string enemy = "Enemy";
+
+    void Start()
     {
-        if (col.gameObject.tag.Equals("Player"))
+        Invoke("ApplyTag", .5f);
+    }
+
+    public void ApplyTag()
+    {
+        gameObject.tag = enemy;
+    }
+
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (gameObject.tag.Equals("Enemy"))
         {
-            Destroy(col.gameObject);
-            Destroy(gameObject);
+            if (col.gameObject.tag.Equals("Player"))
+            {
+                Destroy(col.gameObject);
+            }
         }
     }
 }
