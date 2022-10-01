@@ -2,14 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerMoveScript : MonoBehaviour
 {
     Rigidbody2D rb;
     private Vector2 moveDirection;
     private Vector2 mousePosition;
-
-
+   
     public Camera sceneCamera;
     public float speed = 40f;
     public float speedLimit = 40f;
