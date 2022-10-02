@@ -902,11 +902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.37
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalRotation.w
@@ -939,7 +939,7 @@ PrefabInstance:
     - target: {fileID: 4344685408854825356, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a1190fe83d620ad439c9043aab6c42ec, type: 3}
+      objectReference: {fileID: 21300000, guid: d8ba491bce9423e4db5375dce9742616, type: 3}
     - target: {fileID: 4344685408854825356, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1377,6 +1377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5555488706909316352, guid: 53e71031a1985b4449dcecf46fec766b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de77d165ed5cd4f4db48b9e153aecbb9, type: 3}
     - target: {fileID: 5563228194559048383, guid: 53e71031a1985b4449dcecf46fec766b, type: 3}
       propertyPath: m_Name
       value: PointGun
