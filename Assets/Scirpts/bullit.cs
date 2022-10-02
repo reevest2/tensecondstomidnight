@@ -39,6 +39,6 @@ public class bullit : MonoBehaviour
     {
         source.PlayOneShot(audioClip);
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
