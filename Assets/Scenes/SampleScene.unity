@@ -288,7 +288,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 40
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -950,6 +950,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408854825356, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408854825357, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Radius
+      value: 1.1378113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408854825357, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.10287273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408854825357, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16459644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408854825358, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408854825358, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408854825359, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
