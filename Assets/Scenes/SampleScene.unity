@@ -288,7 +288,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -900,13 +900,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4344685408678392814, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a0e95856a9af6549bf395c840a0a17c, type: 3}
+    - target: {fileID: 4344685408678392814, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9858491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408678392814, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9858491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408678392814, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 2.54
       objectReference: {fileID: 0}
     - target: {fileID: 4344685408678392815, guid: ec552edb4a4616949bad8200fb453d72, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1088,7 +1112,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 97a64dce426cee24990a28a47e89d9a7, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 797559a06314a504eb576d2862266ea8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: edce0f852742b3144855788c5f3f10a6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.36
   m_Pitch: 0.52
