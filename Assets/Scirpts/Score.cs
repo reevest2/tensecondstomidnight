@@ -22,4 +22,14 @@ public class Score : MonoBehaviour
     {
         scoreText.text = "Score:" + scoreAmount;
     }
+
+    private void OnDestroy()
+    {
+        int currentHighScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (scoreAmount > currentHighScore)
+        {
+            PlayerPrefs.SetInt("HighScore", Mathf.FloorToInt(scoreAmount));
+        }
+    }
+
 }

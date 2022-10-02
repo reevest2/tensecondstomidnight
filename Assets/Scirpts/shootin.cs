@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.AccessControl;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,10 @@ public class shootin : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+    public AudioSource source;
+    public AudioClip audioClip;
+    //source.PlayOneShot(audioClip);
+
     public int numberOfShots = 1;
 
     public float bulletForce = 20f;
@@ -16,7 +21,7 @@ public class shootin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("FireProjectile", 10f, 10f);
+        InvokeRepeating("FireProjectile", .5f, 10f);
     }
 
     // Update is called once per frame
@@ -27,6 +32,7 @@ public class shootin : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            source.PlayOneShot(audioClip);
         }
     }
 }

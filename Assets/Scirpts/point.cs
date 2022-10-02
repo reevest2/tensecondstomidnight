@@ -7,9 +7,12 @@ public class point : MonoBehaviour
     public Rigidbody2D rb;
     public shootpoints a;
 
+    public AudioSource source;
+    public AudioClip audioClip;
+
     void Start()
     {
-        a=GameObject.FindGameObjectWithTag("Gun").GetComponent<shootpoints>();
+        a=GameObject.FindGameObjectWithTag("pointgun").GetComponent<shootpoints>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -20,6 +23,7 @@ public class point : MonoBehaviour
             {
                 Destroy(gameObject);
                 Score.scoreAmount +=1;
+                source.PlayOneShot(audioClip);
                 a.FirePointNoForce();
             }
         }
