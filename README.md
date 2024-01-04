@@ -3,7 +3,7 @@
 https://reevest2.itch.io/10-seconds-till-midnight
 
 
-#Created for Ludum Dare 51 Compo. Rules:
+# Created for Ludum Dare 51 Compo. Rules:
 The Compo
 The Compo is Classic Ludum Dare. Another way to think of it is as Ludum Dare “Hard Mode”. Compo games are created entirely from scratch by one person, in just 48 hours. This is the ultimate test of your game creation skills.
 
